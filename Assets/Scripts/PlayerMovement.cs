@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float maxSpeed = 5f;
     [SerializeField]
+    private float jumpForce = 350f;
+    [SerializeField]
     private Transform bottom;
     [SerializeField]
     private float smoothedMovementFactor = 5f;
@@ -46,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocityX = speed;
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-            rb.AddForce(new Vector2(.0f, 400f));
+            rb.AddForce(new Vector2(.0f, jumpForce));
     }
 
     void FixedUpdate()

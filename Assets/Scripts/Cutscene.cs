@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Cutscene : MonoBehaviour
 {
-    //private Dictionary<int, string> names = 
+    [SerializeField]
+    private GameParams gameParams;
 
     private void OnEnable()
     {
         string lvlName = SceneManager.GetActiveScene().name;
         int lvlIndex = int.Parse(lvlName[lvlName.Length - 1].ToString());
-        Debug.Log($"Index: {lvlIndex}");
-        PlayerPrefs.SetInt("Vova", 1);
+        PlayerPrefs.SetInt(gameParams.GetNameByIndex(lvlIndex), 1);
         Time.timeScale = 0f;
     }
 }

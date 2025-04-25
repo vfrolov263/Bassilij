@@ -9,14 +9,15 @@ public class LevelManagment : MonoBehaviour
     private PlayerFigurine player;
     [SerializeField]
     private GameObject buttons;
+    [SerializeField]
+    GameParams gameParams;
     private int levelToLoad = -1;
 
     void OnEnable()
     {
-        string[] names = {"Max", "Vova", "Gleb", "Nikita", "Nastya"};
         int nextLevel = 0;
 
-        foreach (var i in names)
+        foreach (var i in gameParams)
         {
             if (PlayerPrefs.GetInt(i) == 0)
                 break;
@@ -24,7 +25,7 @@ public class LevelManagment : MonoBehaviour
             nextLevel++;
         }
 
-        if (nextLevel == names.Length)
+        if (nextLevel == gameParams.Size)
             return;
 
         SetOnButtonAnim(nextLevel);

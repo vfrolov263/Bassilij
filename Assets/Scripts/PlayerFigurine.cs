@@ -15,7 +15,7 @@ public class PlayerFigurine : MonoBehaviour
 
     public void SetPosition(RectTransform transform)
     {
-        rectTransform.position = transform.position;
+        GetComponent<RectTransform>().position = transform.position;
     }
 
     public void SetDestination(RectTransform target)
