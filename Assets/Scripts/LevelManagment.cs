@@ -12,6 +12,7 @@ public class LevelManagment : MonoBehaviour
     [SerializeField]
     GameParams gameParams;
     private int levelToLoad = -1;
+    private RectTransform playerStartRect;
 
     void OnEnable()
     {
@@ -31,13 +32,20 @@ public class LevelManagment : MonoBehaviour
         SetOnButtonAnim(nextLevel);
     }
 
+    private void Start()
+    {
+        if (playerStartRect != null)
+            player.SetPosition(playerStartRect);
+    }
+
     private void SetOnButtonAnim(int index)
     {
         var anims = buttons.GetComponentsInChildren<Animator>();
         anims[index].SetTrigger("Next");
 
         if (index > 0)
-            player.SetPosition(anims[index - 1].gameObject.GetComponent<RectTransform>());
+            playerStartRect = anims[index - 1].gameObject.GetComponent<RectTransform>();
+            //player.SetPosition(anims[index - 1].gameObject.GetComponent<RectTransform>());
 
         for (int i = index + 1; i < anims.Length; i++)
             anims[i].gameObject.GetComponent<Button>().interactable = false;

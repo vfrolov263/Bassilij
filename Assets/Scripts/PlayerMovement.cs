@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     private bool isGrounded = false;
     private float speed;
+    private Rigidbody2D elevator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,9 +44,10 @@ public class PlayerMovement : MonoBehaviour
         float direction = Input.GetAxis("Horizontal");
         CheckFlip(direction);
         animator.SetBool("Walk", !Mathf.Approximately(direction, 0f));
-        speed = Mathf.Lerp(speed, direction * maxSpeed, Time.deltaTime * smoothedMovementFactor );
+        speed = Mathf.Lerp(speed, direction * maxSpeed, Time.deltaTime * smoothedMovementFactor);
         //Vector3 translate = new Vector3(speed * Time.deltaTime, .0f, 0f);
-        rb.linearVelocityX = speed;
+        float elevatorSpeed = elevator != null ? elevator.linearVelocityX : 0f;
+        rb.linearVelocityX = speed + elevatorSpeed;
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             rb.AddForce(new Vector2(.0f, jumpForce));
@@ -69,6 +71,9 @@ public class PlayerMovement : MonoBehaviour
         if (collision.isTrigger)
             return;
 
+        if (collision.tag == "Elevator")
+            RideElevator(collision.gameObject.GetComponent<Rigidbody2D>());
+
         isGrounded = true;
         animator.SetBool("Grounded", isGrounded);
     }
@@ -78,7 +83,21 @@ public class PlayerMovement : MonoBehaviour
         if (collision.isTrigger)
             return;
 
+        if (collision.tag == "Elevator")
+            LeaveElevator();
+
         isGrounded = false;
         animator.SetBool("Grounded", isGrounded);
+    }
+
+    private void RideElevator(Rigidbody2D elevator)
+    {
+        if (elevator.linearVelocityX != 0)
+            this.elevator = elevator;
+    }
+
+    private void LeaveElevator()
+    {
+        elevator = null;
     }
 }

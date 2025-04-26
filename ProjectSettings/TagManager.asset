@@ -9,6 +9,7 @@ TagManager:
   - EnemyTrigger
   - ElevatorTrigger
   - Terminal
+  - Elevator
   layers:
   - Default
   - TransparentFX

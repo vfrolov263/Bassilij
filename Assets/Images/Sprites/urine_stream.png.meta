@@ -1,0 +1,378 @@
+fileFormatVersion: 2
+guid: 1e0a0545562037549b51d47499adde96
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4893115291712483101
+    second: urine_stream_0
+  - first:
+      213: -7948814694077247788
+    second: urine_stream_1
+  - first:
+      213: 8298923519438974214
+    second: urine_stream_2
+  - first:
+      213: -5218399179260360888
+    second: urine_stream_3
+  - first:
+      213: 6124059236616953990
+    second: urine_stream_4
+  - first:
+      213: 8495904612967077776
+    second: urine_stream_5
+  - first:
+      213: 4993490124556795448
+    second: urine_stream_6
+  - first:
+      213: 477657620245814640
+    second: urine_stream_7
+  - first:
+      213: -4556350470321527385
+    second: urine_stream_8
+  - first:
+      213: -773766390089329071
+    second: urine_stream_9
+  - first:
+      213: -7431629113187122753
+    second: urine_stream_10
+  - first:
+      213: 4561786064148919378
+    second: urine_stream_11
+  - first:
+      213: -5528281310428001949
+    second: urine_stream_12
+  - first:
+      213: 3903649664430053139
+    second: urine_stream_13
+  - first:
+      213: 5642637075432654672
+    second: urine_stream_14
+  - first:
+      213: -802015171371488488
+    second: urine_stream_15
+  - first:
+      213: -1068571515460867419
+    second: urine_stream_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: urine_stream_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 526
+        width: 461
+        height: 336
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dece1e762320b190800000000000000
+      internalID: -7948814694077247788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urine_stream_2
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 522
+        width: 414
+        height: 315
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d6b4aa8f2bb2370800000000000000
+      internalID: 8298923519438974214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urine_stream_3
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 513
+        width: 358
+        height: 309
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8470fff38958497b0800000000000000
+      internalID: -5218399179260360888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urine_stream_5
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 60
+        width: 318
+        height: 309
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09751857b3487e570800000000000000
+      internalID: 8495904612967077776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urine_stream_7
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 63
+        width: 258
+        height: 307
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d920b231bf0a600800000000000000
+      internalID: 477657620245814640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urine_stream_8
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 55
+        width: 198
+        height: 315
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a52d48436794c0c0800000000000000
+      internalID: -4556350470321527385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urine_stream_11
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 63
+        width: 176
+        height: 307
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2547ce68148be4f30800000000000000
+      internalID: 4561786064148919378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urine_stream_12
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 62
+        width: 113
+        height: 308
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369028130799743b0800000000000000
+      internalID: -5528281310428001949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 54f29e0f85f6a0148aca5ab6a444a7dd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      urine_stream_1: -7948814694077247788
+      urine_stream_11: 4561786064148919378
+      urine_stream_12: -5528281310428001949
+      urine_stream_2: 8298923519438974214
+      urine_stream_3: -5218399179260360888
+      urine_stream_5: 8495904612967077776
+      urine_stream_7: 477657620245814640
+      urine_stream_8: -4556350470321527385
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

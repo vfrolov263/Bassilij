@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8300210802125315169}
   - component: {fileID: 1838901846009164124}
   - component: {fileID: 2144589575698215446}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Zombie1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7924791595332223035}
   - component: {fileID: 800115915421690787}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: z2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2175046145055456469}
   - component: {fileID: 6369632907007399010}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sleep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4603380532795363288}
   - component: {fileID: 6954330978667617886}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: z3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 946482272025342686}
   - component: {fileID: 791282067360096395}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: z1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -511,7 +511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7918636249663440350}
   - component: {fileID: 2495232484403516445}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}

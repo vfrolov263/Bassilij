@@ -23,8 +23,6 @@ public class CameraMovement : MonoBehaviour
         camMinPos.y += Camera.main.orthographicSize;
         camMaxPos.x -= camWidthSize;
         camMaxPos.y -= Camera.main.orthographicSize;
-        Debug.Log(camMinPos);
-        Debug.Log(camMaxPos);
     }
 
     // Update is called once per frame

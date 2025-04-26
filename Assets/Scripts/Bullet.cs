@@ -7,7 +7,12 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             GameObject enemy = collision.gameObject;
-            enemy.GetComponent<Animator>().SetTrigger("Dead");
+            Animator anim = enemy.GetComponent<Animator>();
+            
+            if (anim == null)
+                return;
+
+            anim.SetTrigger("Dead");
             enemy.GetComponent<Rigidbody2D>().freezeRotation = false;
             Destroy(enemy.GetComponent<ZombieMovement>());
             enemy.tag = "Untagged";
