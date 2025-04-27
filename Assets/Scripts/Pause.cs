@@ -8,7 +8,7 @@ public class Pause : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && pause != null)
         {
             pause.SetActive(true);
             Time.timeScale = 0f;
