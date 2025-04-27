@@ -10,23 +10,32 @@ TagManager:
   - ElevatorTrigger
   - Terminal
   - Elevator
+  - Bullet
+  - Dragon
+  - BeerBox
+  - Carolina
+  - Gaz
+  - Bottles
+  - Drop
+  - DropPoint
+  - Dragonfire
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Platforms
   - OneWayPlatforms
-  - 
-  - 
+  - Bullets
+  - Drop
   - Enemies
   - 
   - 
   - 
   - 
-  - 
+  - Items
   - 
   - 
   - 

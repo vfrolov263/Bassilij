@@ -24,7 +24,9 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemies"), LayerMask.NameToLayer("Enemies"));
-        //animator = GetComponentsInChildren<Animator>().Where(go => go.gameObject != this.gameObject);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Drop"));
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Bullets"), LayerMask.NameToLayer("Drop"));
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Drop"), LayerMask.NameToLayer("Drop"));
 
         foreach (var i in GetComponentsInChildren<Animator>())
         {
