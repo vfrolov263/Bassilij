@@ -67,6 +67,11 @@ public class LevelManagment : MonoBehaviour
         player.Move();
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
     private void LoadLevel()
     {
         if (levelToLoad != -1)

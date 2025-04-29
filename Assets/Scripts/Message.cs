@@ -11,6 +11,7 @@ public class Message : MonoBehaviour
             return;
             
         Time.timeScale = 0f;
+        Cursor.visible = true;
         message.SetActive(true);
         Destroy(gameObject);
     }

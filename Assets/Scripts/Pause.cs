@@ -10,6 +10,7 @@ public class Pause : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && pause != null)
         {
+            Cursor.visible = true;
             pause.SetActive(true);
             Time.timeScale = 0f;
         }
@@ -17,6 +18,7 @@ public class Pause : MonoBehaviour
 
     public void Continue()
     {
+        Cursor.visible = false;
         Time.timeScale = 1f;
         pause.SetActive(false);
     }

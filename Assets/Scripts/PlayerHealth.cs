@@ -1,6 +1,4 @@
-using UnityEditor.SearchService;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -11,13 +9,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.tag != "Enemy" && !collision.gameObject.tag.Contains("Dragon"))
             return;
-
+            
         gameOver.SetActive(true);
-        Invoke("Reload", 2f);
-    }
-
-    private void Reload()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

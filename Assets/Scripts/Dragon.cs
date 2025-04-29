@@ -9,6 +9,8 @@ public class Dragon : MonoBehaviour
     private GameObject sleepAnimation;
     [SerializeField]
     private float fireTime = 2f;
+    [SerializeField]
+    private AudioSource sleepSound, damageSound;
     private int health = 4;
     private float maxHealth;
     private SpriteRenderer sprite;
@@ -38,14 +40,17 @@ public class Dragon : MonoBehaviour
             StopAllCoroutines();
             Animator anim = GetComponent<Animator>();
             anim.SetTrigger("Sleep");
+            sleepSound.Play();
             Destroy(GetComponent<Collider2D>());
             Invoke("Sleep", anim.GetCurrentAnimatorStateInfo(0).length);
         }
+        else
+            damageSound.Play();
     }
 
     private IEnumerator Fire()
     {
-        yield return new WaitForSeconds(fireTime);
+        yield return new WaitForSeconds(1f);
 
         while (true)
         {
@@ -56,6 +61,7 @@ public class Dragon : MonoBehaviour
 
     private void Sleep()
     {
+        GetComponent<SpriteRenderer>().sortingOrder = 0;
         sleepAnimation.SetActive(true);
     }
 

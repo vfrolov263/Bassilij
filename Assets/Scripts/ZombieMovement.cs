@@ -26,10 +26,4 @@ public class ZombieMovement : MonoBehaviour
         speed = -speed;
         transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, 1f);
     }
-
-    // private void OnColliderEnter2D(Collider2D collider)
-    // {
-    //     if (collider.gameObject.tag == "Enemy")
-    //         Phys
-    // }
 }

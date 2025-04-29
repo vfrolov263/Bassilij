@@ -10,10 +10,12 @@ public class Shooter : MonoBehaviour
     [SerializeField]
     private float reloadTime = 2f;
     private bool readyToShoot;
+    private AudioSource shootSound;
 
     void Start()
     {
         readyToShoot = true;
+        shootSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,6 +23,7 @@ public class Shooter : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z) && readyToShoot)
         {
+            shootSound.Play();
             GameObject newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
             newBullet.GetComponent<Rigidbody2D>().AddForceX( transform.parent.localScale.x * shootForce);
             StartCoroutine(Reload());

@@ -19,6 +19,7 @@ TagManager:
   - Drop
   - DropPoint
   - Dragonfire
+  - Message
   layers:
   - Default
   - TransparentFX

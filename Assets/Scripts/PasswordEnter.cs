@@ -10,12 +10,14 @@ public class PasswordEnter : MonoBehaviour
     private string pwd;
     private TMP_Text text;
     private Animator animator;
+    private AudioSource wrongSound;
     
     void Start()
     {
         pwd = "";
         text = GetComponent<TMP_Text>();
         animator = GetComponent<Animator>();
+        wrongSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -43,6 +45,7 @@ public class PasswordEnter : MonoBehaviour
         }
         else
         {
+            if (!wrongSound.isPlaying) wrongSound.Play();
             animator.SetBool("Wrong", true);
             Invoke("ExitPwdPannel", 2f);
         }
@@ -63,6 +66,7 @@ public class PasswordEnter : MonoBehaviour
     
     private void ExitPwdPannel()
     {
+        Cursor.visible = false;
         pwd = "";
         text.text = "";
         animator.SetBool("Wrong", false);

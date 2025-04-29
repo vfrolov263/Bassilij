@@ -16,6 +16,7 @@ public class Bullet : MonoBehaviour
             enemy.GetComponent<Rigidbody2D>().freezeRotation = false;
             Destroy(enemy.GetComponent<ZombieMovement>());
             enemy.tag = "Untagged";
+            enemy.GetComponent<AudioSource>().Play();
         }
 
         GetComponent<Animator>().enabled = false;

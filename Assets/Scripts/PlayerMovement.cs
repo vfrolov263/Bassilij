@@ -13,16 +13,19 @@ public class PlayerMovement : MonoBehaviour
     private Transform bottom;
     [SerializeField]
     private float smoothedMovementFactor = 5f;
+    [SerializeField]
+    private AudioSource jumpSound;
     private Animator animator;
     private Rigidbody2D rb;
     private Vector3 velocity = Vector3.zero;
-    private bool isGrounded = false;
+    private bool isGrounded = false, isMoving = false;
     private float speed;
     private Rigidbody2D elevator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Cursor.visible = false;
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemies"), LayerMask.NameToLayer("Enemies"));
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Drop"));
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Bullets"), LayerMask.NameToLayer("Drop"));
@@ -45,15 +48,20 @@ public class PlayerMovement : MonoBehaviour
     {
         float direction = Input.GetAxis("Horizontal");
         CheckFlip(direction);
-        animator.SetBool("Walk", !Mathf.Approximately(direction, 0f));
+        isMoving = !Mathf.Approximately(direction, 0f);
+        animator.SetBool("Walk", isMoving);
         speed = Mathf.Lerp(speed, direction * maxSpeed, Time.deltaTime * smoothedMovementFactor);
         //Vector3 translate = new Vector3(speed * Time.deltaTime, .0f, 0f);
         float elevatorSpeed = elevator != null ? elevator.linearVelocityX : 0f;
         rb.linearVelocityX = speed + elevatorSpeed;
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            jumpSound.Play();
             rb.AddForce(new Vector2(.0f, jumpForce));
+        }
     }
+
 
     void FixedUpdate()
     {
