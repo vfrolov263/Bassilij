@@ -26,18 +26,11 @@ public class CameraMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-       // Vector3 newPosition = Vector3.SmoothDamp(transform.position, target.position, ref velocity, smoothTime);
-
-        Vector3 newPosition = Vector3.Distance(transform.position, target.position) < 0.15f ? target.position :
-            Vector3.SmoothDamp(transform.position, target.position, ref velocity, smoothTime);
+        Vector3 newPosition = Vector3.SmoothDamp(transform.position, target.position, ref velocity, smoothTime);
 
         CheckBounds(ref newPosition);
-
-        // if (Vector3.Distance(transform.position, target.position) < 0.15f)
-        //     newPosition = target.position;
-
         transform.position = new Vector3(newPosition.x, newPosition.y, transform.position.z);
     }
 

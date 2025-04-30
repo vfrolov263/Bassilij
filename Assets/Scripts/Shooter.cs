@@ -11,24 +11,32 @@ public class Shooter : MonoBehaviour
     private float reloadTime = 2f;
     private bool readyToShoot;
     private AudioSource shootSound;
+    private PlayerLocker locker;
 
     void Start()
     {
         readyToShoot = true;
         shootSound = GetComponent<AudioSource>();
+        locker = transform.parent.GetComponent<PlayerLocker>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && readyToShoot)
-        {
-            shootSound.Play();
-            GameObject newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
-            newBullet.GetComponent<Rigidbody2D>().AddForceX( transform.parent.localScale.x * shootForce);
-            StartCoroutine(Reload());
-            readyToShoot = false;
-        }
+        if (Input.GetKeyDown(KeyCode.Z))
+            Shoot();
+    }
+
+    public void Shoot()
+    {
+        if (locker.Locked || !readyToShoot)
+            return;
+
+        shootSound.Play();
+        GameObject newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+        newBullet.GetComponent<Rigidbody2D>().AddForceX( transform.parent.localScale.x * shootForce);
+        StartCoroutine(Reload());
+        readyToShoot = false;
     }
 
     private IEnumerator Reload()

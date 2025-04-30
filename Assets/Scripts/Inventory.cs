@@ -14,6 +14,10 @@ public class Inventory : MonoBehaviour
     private string fullInventoryMsg;
     [SerializeField]
     private string dropPointUnavailableMsg;
+    [SerializeField]
+    private AudioSource pickUpSound;
+    [SerializeField]
+    private AudioSource putSound;
     private GameObject currentItem;
     private int itemsLayer;
 
@@ -39,6 +43,9 @@ public class Inventory : MonoBehaviour
                 if (dropPointSprite != null) Destroy(dropPointSprite);
                 currentItem.SetActive(true);
                 currentItem = null;
+                
+                if (!putSound.isPlaying)
+                    putSound.Play();
             }
             else if (warrningMsg.text == "")
             {
@@ -52,6 +59,7 @@ public class Inventory : MonoBehaviour
             {
                 currentItem = dropObjects[dropTags.IndexOf(tag)];
                 Destroy(collision.gameObject);
+                pickUpSound.Play();
             }
         }
     }

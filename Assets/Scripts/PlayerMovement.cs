@@ -1,7 +1,4 @@
 using UnityEngine;
-using Prime31;
-using System;
-using System.Linq;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -21,16 +18,11 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded = false, isMoving = false;
     private float speed;
     private Rigidbody2D elevator;
+    private PlayerLocker locker;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Cursor.visible = false;
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemies"), LayerMask.NameToLayer("Enemies"));
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Drop"));
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Bullets"), LayerMask.NameToLayer("Drop"));
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Drop"), LayerMask.NameToLayer("Drop"));
-
         foreach (var i in GetComponentsInChildren<Animator>())
         {
             if (transform != i.transform)
@@ -41,21 +33,18 @@ public class PlayerMovement : MonoBehaviour
         }
 
         rb = GetComponent<Rigidbody2D>();
+        locker = GetComponent<PlayerLocker>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        float direction = Input.GetAxis("Horizontal");
-        CheckFlip(direction);
-        isMoving = !Mathf.Approximately(direction, 0f);
-        animator.SetBool("Walk", isMoving);
-        speed = Mathf.Lerp(speed, direction * maxSpeed, Time.deltaTime * smoothedMovementFactor);
-        //Vector3 translate = new Vector3(speed * Time.deltaTime, .0f, 0f);
-        float elevatorSpeed = elevator != null ? elevator.linearVelocityX : 0f;
-        rb.linearVelocityX = speed + elevatorSpeed;
+        if (Input.GetKeyDown(KeyCode.Space))
+            Jump();
+    }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+    public void Jump()
+    {
+        if (!locker.Locked && isGrounded)
         {
             jumpSound.Play();
             rb.AddForce(new Vector2(.0f, jumpForce));
@@ -65,6 +54,14 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        float direction = locker.Locked ? 0f : ArrowsInput.Direction;
+        CheckFlip(direction);
+        isMoving = !Mathf.Approximately(direction, 0f);
+        animator.SetBool("Walk", isMoving);
+        speed = Mathf.Lerp(speed, direction * maxSpeed, Time.fixedDeltaTime * smoothedMovementFactor);
+        Vector3 translate = new Vector3(speed * Time.fixedDeltaTime, .0f, 0f);
+        float elevatorSpeed = elevator != null ? elevator.linearVelocityX : 0f;
+        rb.linearVelocityX = speed + elevatorSpeed;
         float verticalSpeed = rb.linearVelocityY;
         if (verticalSpeed < 0f && verticalSpeed > -0.05f) verticalSpeed = 0f;
         animator.SetFloat("VerticalSpeed", verticalSpeed);

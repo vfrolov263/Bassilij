@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: f2ecd6b50d31fbd4881850c736547492
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1142884276003641772
+    second: Sveta_head_0
+  - first:
+      213: 6249135302521116834
+    second: Sveta_head_1
+  - first:
+      213: 2174623892048239276
+    second: Sveta_head_2
+  - first:
+      213: -3168775792464525093
+    second: Sveta_head_3
+  - first:
+      213: 1675339356898414235
+    second: Sveta_head_4
+  - first:
+      213: -5454735516410232008
+    second: Sveta_head_5
+  - first:
+      213: 6011357040659521797
+    second: Sveta_head_6
+  - first:
+      213: 1412285753437800849
+    second: Sveta_head_7
+  - first:
+      213: -6644817989306587026
+    second: Sveta_head_8
+  - first:
+      213: -6890962579077339322
+    second: Sveta_head_9
+  - first:
+      213: -371450492132517058
+    second: Sveta_head_10
+  - first:
+      213: 5653195458394078149
+    second: Sveta_head_11
+  - first:
+      213: -7151192269670648885
+    second: Sveta_head_12
+  - first:
+      213: -7041651759911559450
+    second: Sveta_head_13
+  - first:
+      213: -471814603775168004
+    second: Sveta_head_14
+  - first:
+      213: -1894289489614373881
+    second: Sveta_head_15
+  - first:
+      213: 2897689639501334968
+    second: Sveta_head_16
+  - first:
+      213: -6211784292968694503
+    second: Sveta_head_17
+  - first:
+      213: -68205874989083351
+    second: Sveta_head_18
+  - first:
+      213: -4765519973141001300
+    second: Sveta_head_19
+  - first:
+      213: 1215503536332289515
+    second: Sveta_head_20
+  - first:
+      213: 1094587041378779411
+    second: Sveta_head_21
+  - first:
+      213: -8578474225014982517
+    second: Sveta_head_22
+  - first:
+      213: -1518645316757215696
+    second: Sveta_head_23
+  - first:
+      213: -6336854944136047760
+    second: Sveta_head_24
+  - first:
+      213: 883303205006831009
+    second: Sveta_head_25
+  - first:
+      213: -809880476098898704
+    second: Sveta_head_26
+  - first:
+      213: 1155558396400696154
+    second: Sveta_head_27
+  - first:
+      213: -7058416502190658917
+    second: Sveta_head_28
+  - first:
+      213: -8967598406859484998
+    second: Sveta_head_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sveta_head_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1131
+        height: 1116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9939a91375cdf00800000000000000
+      internalID: 1142884276003641772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_1
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 1111
+        width: 30
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8df14c27369b650800000000000000
+      internalID: 6249135302521116834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_2
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 171
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caadc9d78e0dd2e10800000000000000
+      internalID: 2174623892048239276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_3
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 164
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd88b45a43f3604d0800000000000000
+      internalID: -3168775792464525093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_4
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 141
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e492ec440004710800000000000000
+      internalID: 1675339356898414235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_5
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 76
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83349a0c2f2ec44b0800000000000000
+      internalID: -5454735516410232008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_6
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 81
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501ed820161ac6350800000000000000
+      internalID: 6011357040659521797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_7
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 82
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 199410ff862799310800000000000000
+      internalID: 1412285753437800849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_8
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 79
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6861469e3dd8c3a0800000000000000
+      internalID: -6644817989306587026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_9
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 64
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647e5915b026e50a0800000000000000
+      internalID: -6890962579077339322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_10
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 77
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b1cc4deb758daf0800000000000000
+      internalID: -371450492132517058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_11
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 55
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cb3e67415f247e40800000000000000
+      internalID: 5653195458394078149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_12
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 61
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3f2c5f48cd1cc90800000000000000
+      internalID: -7151192269670648885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_13
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 41
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee977a5807074e90800000000000000
+      internalID: -7041651759911559450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_14
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 58
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1b32e1e17c379f0800000000000000
+      internalID: -471814603775168004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_15
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 43
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c77cddeb126b5e0800000000000000
+      internalID: -1894289489614373881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_16
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b98ecfdf59a63820800000000000000
+      internalID: 2897689639501334968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_17
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 35
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91dff34d81f4bc9a0800000000000000
+      internalID: -6211784292968694503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_18
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 47
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9255ea93e1fad0ff0800000000000000
+      internalID: -68205874989083351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_19
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 20
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cabc6ee45d87dddb0800000000000000
+      internalID: -4765519973141001300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_20
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 31
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be5315ab6065ed010800000000000000
+      internalID: 1215503536332289515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_21
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 32
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311c0216d11c03f00800000000000000
+      internalID: 1094587041378779411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_22
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88332f942323f880800000000000000
+      internalID: -8578474225014982517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_23
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 18
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03620ea6120bceae0800000000000000
+      internalID: -1518645316757215696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_24
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 24
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073d79d9008fe08a0800000000000000
+      internalID: -6336854944136047760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_25
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 15
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad6563c59f124c00800000000000000
+      internalID: 883303205006831009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_26
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 14
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4d9977ff9b2c4f0800000000000000
+      internalID: -809880476098898704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_27
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5bfea63d3e590010800000000000000
+      internalID: 1155558396400696154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_28
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 7
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9aab2e96977b0e90800000000000000
+      internalID: -7058416502190658917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sveta_head_29
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 4
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab018c6e2c0bc8380800000000000000
+      internalID: -8967598406859484998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sveta_head_0: 1142884276003641772
+      Sveta_head_1: 6249135302521116834
+      Sveta_head_10: -371450492132517058
+      Sveta_head_11: 5653195458394078149
+      Sveta_head_12: -7151192269670648885
+      Sveta_head_13: -7041651759911559450
+      Sveta_head_14: -471814603775168004
+      Sveta_head_15: -1894289489614373881
+      Sveta_head_16: 2897689639501334968
+      Sveta_head_17: -6211784292968694503
+      Sveta_head_18: -68205874989083351
+      Sveta_head_19: -4765519973141001300
+      Sveta_head_2: 2174623892048239276
+      Sveta_head_20: 1215503536332289515
+      Sveta_head_21: 1094587041378779411
+      Sveta_head_22: -8578474225014982517
+      Sveta_head_23: -1518645316757215696
+      Sveta_head_24: -6336854944136047760
+      Sveta_head_25: 883303205006831009
+      Sveta_head_26: -809880476098898704
+      Sveta_head_27: 1155558396400696154
+      Sveta_head_28: -7058416502190658917
+      Sveta_head_29: -8967598406859484998
+      Sveta_head_3: -3168775792464525093
+      Sveta_head_4: 1675339356898414235
+      Sveta_head_5: -5454735516410232008
+      Sveta_head_6: 6011357040659521797
+      Sveta_head_7: 1412285753437800849
+      Sveta_head_8: -6644817989306587026
+      Sveta_head_9: -6890962579077339322
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

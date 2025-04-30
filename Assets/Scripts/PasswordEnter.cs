@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PasswordEnter : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class PasswordEnter : MonoBehaviour
     private string correctPassword;
     [SerializeField]
     private GameObject cutscene;
+    [SerializeField]
+    private UnityEvent<bool> playLockActions;
     private string pwd;
     private TMP_Text text;
     private Animator animator;
@@ -18,12 +21,6 @@ public class PasswordEnter : MonoBehaviour
         text = GetComponent<TMP_Text>();
         animator = GetComponent<Animator>();
         wrongSound = GetComponent<AudioSource>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void Click(int digit)
@@ -55,7 +52,6 @@ public class PasswordEnter : MonoBehaviour
     private void LockPlayer()
     {
         GameObject player = GameObject.FindWithTag("Player");
-        Destroy(player.GetComponent<PlayerMovement>());
         player.GetComponent<Rigidbody2D>().Sleep();
     }
 
@@ -66,6 +62,7 @@ public class PasswordEnter : MonoBehaviour
     
     private void ExitPwdPannel()
     {
+        playLockActions.Invoke(false);
         Cursor.visible = false;
         pwd = "";
         text.text = "";

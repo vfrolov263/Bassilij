@@ -346,9 +346,11 @@ GameObject:
   - component: {fileID: 9162875144446256797}
   - component: {fileID: 8137293191604311041}
   - component: {fileID: 5857521229251187068}
+  - component: {fileID: 8640480296717132252}
   - component: {fileID: 2192573437737729468}
   - component: {fileID: 5034957967571481134}
   - component: {fileID: 3327824451085859664}
+  - component: {fileID: 1958464694347101054}
   - component: {fileID: 5921150428644913432}
   - component: {fileID: 5089539727603967755}
   m_Layer: 0
@@ -449,6 +451,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5, y: 1.62}
   m_EdgeRadius: 0
+--- !u!114 &8640480296717132252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4824886926421430104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3d5966467ec834aae67305b94fede4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlsPannel: {fileID: 0}
 --- !u!114 &2192573437737729468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +507,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   terminal: {fileID: 0}
+--- !u!114 &1958464694347101054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4824886926421430104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c9619e2a4e9564469ec3f62777fceec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 46d470ac835393e47b85dca658e14cdb, type: 2}
+  actions:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8640480296717132252}
+        m_TargetAssemblyTypeName: PlayerLocker, Assembly-CSharp
+        m_MethodName: SetLock
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!95 &5921150428644913432
 Animator:
   serializedVersion: 7
@@ -524,8 +567,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e004385a79d6b844db1ab1c89ae75985, type: 3}
-  m_Resource: {fileID: 8300000, guid: e004385a79d6b844db1ab1c89ae75985, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4e901090b62a55141b506889431722b0, type: 3}
+  m_Resource: {fileID: 8300000, guid: 4e901090b62a55141b506889431722b0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.77
   m_Pitch: 1
